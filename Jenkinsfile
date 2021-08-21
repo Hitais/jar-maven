@@ -1,10 +1,10 @@
 pipeline{
   agent any
   stages{
-    stage('show arguments'){
+    stage('print_args'){
       steps{
-        read param1
-        read param2
+        echo $param1
+        echo $param2
       }
     }
   }
